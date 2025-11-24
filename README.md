@@ -1,58 +1,97 @@
-# Car Booking System
 
-This is a Spring Boot-based Car Booking System application. It allows users to book cars, manage users, and handle car-related operations with a RESTful API.
 
-## Features
-- User and Car management
-- Booking functionality
-- Exception handling
-- JPA repository integration
-- RESTful API endpoints
- A simple Java Spring Boot application for managing car bookings, users, and related operations. This project demonstrates a layered architecture using controllers, services, DAOs, JPA repositories, and custom exception handling.
-- `jpaRepo/` - Spring Data JPA repositories
-- `entity/` - JPA entity classes
- ```
- CarBookingSystem/
- ├── src/
- │   ├── main/
- │   │   ├── java/com/CarBookingSystem/
- │   │   │   ├── controller/         # REST controllers
- │   │   │   ├── service/            # Business logic
- │   │   │   ├── Dao/                # Data access objects
- │   │   │   ├── jpaRepo/            # JPA repositories
- │   │   │   ├── entity/             # Entity classes
- │   │   │   ├── exceptions/         # Custom exceptions
- │   │   │   └── CarBookingSystemApplication.java
- │   │   └── resources/
- │   │       └── application.properties
- │   └── test/java/com/CarBookingSystem/
- │       └── CarBookingSystemApplicationTests.java
- ├── pom.xml
- └── README.md
- ```
-- Maven 3.6+
+<div align="center">
+  <img src="https://cdn.pixabay.com/photo/2013/07/13/12/46/car-146185_1280.png" alt="Car Booking System" width="180"/>
+  <h1>🚗 Car Booking System</h1>
+  <p>
+    <img src="https://img.shields.io/badge/Spring%20Boot-2.7.0-brightgreen" alt="Spring Boot">
+    <img src="https://img.shields.io/badge/Java-17-blue" alt="Java">
+    <img src="https://img.shields.io/badge/Build-Maven-blueviolet" alt="Maven">
+    <img src="https://img.shields.io/badge/License-MIT-yellow.svg" alt="License">
+  </p>
+  <p><b>A professional Spring Boot application for car booking, user management, and more.</b></p>
+</div>
 
-### Build and Run
-1. Clone the repository:
-   ```
-2. Navigate to the project directory:
+---
+
+## ✨ Features
+
+🚘 User and Car management  
+📅 Booking functionality  
+🛡️ Exception handling  
+🗄️ JPA repository integration  
+🔗 RESTful API endpoints  
+📦 Layered architecture (Controllers, Services, DAOs, JPA Repositories, Entities, Exceptions)
+
+---
+
+## 🗂️ Project Structure
+
+```text
+CarBookingSystem/
+├── src/
+│   ├── main/
+│   │   ├── java/com/CarBookingSystem/
+│   │   │   ├── controller/         # REST controllers
+│   │   │   ├── service/            # Business logic
+│   │   │   ├── Dao/                # Data access objects
+│   │   │   ├── jpaRepo/            # JPA repositories
+│   │   │   ├── entity/             # Entity classes
+│   │   │   ├── exceptions/         # Custom exceptions
+│   │   │   └── CarBookingSystemApplication.java
+│   │   └── resources/
+│   │       └── application.properties
+│   └── test/java/com/CarBookingSystem/
+│       └── CarBookingSystemApplicationTests.java
+├── pom.xml
+└── README.md
+```
+
+---
+
+## 🚀 Getting Started
+
+### Prerequisites
+
+- Java 17 or later ([Download](https://adoptium.net/))
+- Maven 3.6+ ([Download](https://maven.apache.org/))
+
+### Build & Run
+
+1. **Clone the repository:**
    ```sh
+   git clone <repo-url>
    cd CarBookingSystem
    ```
-3. Build the project using Maven:
+2. **Build the project:**
    ```sh
    mvn clean install
    ```
-4. Run the application:
+3. **Run the application:**
    ```sh
    mvn spring-boot:run
    ```
+   The application will be available at [http://localhost:8080](http://localhost:8080)
 
-### Configuration
-Edit `src/main/resources/application.properties` to configure database and other settings.
+### ⚙️ Configuration
 
-## API Endpoints
-Refer to the controller classes in `src/main/java/com/CarBookingSystem/controller/` for available endpoints.
+Edit [`src/main/resources/application.properties`](src/main/resources/application.properties) to configure your database and other settings.
 
-## License
-This project is licensed under the MIT License.
+---
+
+## 📚 API Endpoints
+
+Refer to the controller classes in [`src/main/java/com/CarBookingSystem/controller/`](src/main/java/com/CarBookingSystem/controller/) for available endpoints.
+
+---
+
+## 🛠️ Requirements
+
+- Java 17 or later
+- Maven 3.6+
+
+---
+
+## 📄 License
+
+This project is for educational/demo purposes.
